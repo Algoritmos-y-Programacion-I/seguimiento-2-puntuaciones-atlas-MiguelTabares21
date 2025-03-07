@@ -2,8 +2,19 @@
 // Descripción del programa: Permite que los jugadores registren datos y hace el onteo de la pumtuacion y el numero de rondas por jugador,
 // Ademas es capaz de reconocer el jugador con mayor puntuacion
 // Entradas:
+// Número de jugadores (int)
+// Número de rondas (int)
+//Puntajes de cada jugador por ronda (int)
+  
 // Salidas:
-// Ejemplo:
+// Lista de jugadores con sus puntajes finales (String)
+// Jugador con la puntuación más alta
+/* Ejemplo: Jugador(es) con la mayor puntuaciÃ³n:
+Jugador2 con 154 puntos
+Resultados finales:
+Jugador1 / Puntaje total: 88 / Promedio: 44,00
+Jugador2 / Puntaje total: 154 / Promedio: 77,00*/
+
 package ui;
 
 import java.util.Scanner;
@@ -100,7 +111,7 @@ public class Atlas2 {
         return puntajes;
     }
 
-    // Método para mostrar los resultados finales
+    // Método para mostrar los resultados finales 
     public static void mostrarResultados(String[] jugadores, int[] puntajes, int rondas) {
         System.out.println("Resultados finales:");
         for (int i = 0; i < jugadores.length; i++) {
